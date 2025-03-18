@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6e6;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            background: #ffcccc;
+            border: 2px solid #ff4d4d;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .yes-btn {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .no-btn {
+            background-color: #cccccc;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="question">Will you be my Valentine? 💘</h1>
+        <button id="yes-btn" class="yes-btn">Yes</button>
+        <button id="no-btn" class="no-btn">No</button>
+    </div>
+
+    <script>
+        const messages = [
+            "Are you sure? 🥺",
+            "Please reconsider... 😢",
+            "I’ll buy you chocolates! 🍫",
+            "I can’t live without you! 💔",
+            "Last chance... pretty please? 🥰"
+        ];
+        let count = 0;
+
+        const yesBtn = document.getElementById("yes-btn");
+        const noBtn = document.getElementById("no-btn");
+        const questionElement = document.getElementById("question");
+
+        yesBtn.addEventListener("click", acceptLove);
+        noBtn.addEventListener("click", begForLove);
+
+        function acceptLove() {
+            document.querySelector('.container').innerHTML = '<h1>Yay! You\'re my Valentine! 🎉❤️</h1>';
+        }
+
+        function begForLove() {
+            if (questionElement) {
+                if (count < messages.length) {
+                    questionElement.innerText = messages[count];
+                    count++;
+                } else {
+                    questionElement.innerText = "You leave me no choice... BE MY VALENTINE! 😤";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
