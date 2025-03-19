@@ -63,18 +63,22 @@ h1 {
 
   .title {
     font-size: 32px;
+    font-family: 'Minecraftia',sans-serif;
   }
 
   .title-2 {
     font-size: 20px;
+    font-family: 'Minecraftia',sans-serif;
   }
 
   .pretitle {
     font-size: 14px;
+    font-family: 'Minecraftia',sans-serif;
   }
 
   p {
     font-size: 20;
+    font-family: 'Minecraftia',sans-serif;
     line-height: 28;
   }
 }
@@ -276,6 +280,7 @@ section.why-us {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Minecraftia',sans-serif;
     width: 3rem;
     height: 3rem;
     background-color: transparent;
@@ -397,12 +402,14 @@ body.home-rtl {
 }
 
 .title {
+  font-family: 'Minecraftia',sans-serif;
   color: var(--primaryColor);
   font-size: 32px;
   font-weight: bold;
   position: relative;
 }
 .title-2 {
+  font-family: 'Minecraftia',sans-serif;
   color: var(--title-2-color);
   font-size: 26px;
   font-weight: bold;
@@ -415,6 +422,7 @@ body.home-rtl {
   position: start;
 }
 .pretitle {
+  font-family: 'Minecraftia',sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
@@ -499,6 +507,7 @@ a:focus {
 
 /* Button Styles */
 .btn {
+  font-family: 'Minecraftia',sans-serif;
   display: inline-block;
   padding: .5rem 2 rem;
   background-color: #0ae25d;
