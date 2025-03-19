@@ -1,3 +1,4 @@
+/* Font family */
 @font-face {
   font-family: 'Minecraftea';
   src: url('Minecraftia.ttf') format('truetype');
@@ -5,7 +6,7 @@
   font-style: normal;
 }
 
-/* start global classes */
+/* Basic color */
 :root {
   /* body bg color */
   --bodyColor: #ffffff;
@@ -29,75 +30,6 @@
   --border-radius: 5px;
 }
 
-
-/* Home Slider Styles */
-.home-slider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slider-item {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: start;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  overflow: hidden; /* Ensure content stays within bounds */
-}
-
-.slider-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(12, 12, 12, 0.747); /* Adjusted opacity to 50% */
-  z-index: 1; /* Ensure it sits above the background but below the text */
-}
-
-.container {
-  position: relative;
-  z-index: 2; /* Keep text above the overlay */
-}
-
-
-.slider-text {
-  color: #fff;
-  text-align: left;
-}
-
-.slider-text h1 {
-  font-size: 45px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.slider-text p {
-  font-size: 25px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-h5 {
-  text-align: start;
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .slider-text h1 {
-    font-size: 45px;
-  }
-
-  .slider-text p {
-    font-size: 20px;
-  }
-}
-
 body {
   color: white;
   background-size: cover; 
@@ -109,8 +41,117 @@ body {
   text-align: start;
   position: relative;
   overflow-x: hidden;
-
+  padding-top: 18px;
 }
+
+/* Start Text Styles */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #f7f3f3;
+  font-family: 'Minecraftea', sans-serif;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 6px 18px;
+    font-size: 17px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .title-2 {
+    font-size: 20px;
+  }
+
+  .pretitle {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 20;
+    line-height: 28;
+  }
+}
+
+p {
+  color: var(--secendaryColor);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: 'Minecraftea',sans-serif;
+}
+
+p1 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: start;
+  width: 20%;
+  font-family: 'Minecraftea',sans-serif;
+}
+
+h7 {
+  color: rgb(226, 158, 10);
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 15px;
+  text-align: start;
+  font-family: 'Minecraftea',sans-serif;
+}
+
+h8 {
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  font-weight: bolder;
+  justify-content: start;
+  margin-top: 15px;
+  text-align: start;
+  font-family: 'Minecraftea',sans-serif;
+}
+
+h9 {
+  color: white;
+  font-size: 28px;
+  font-weight: bolder;
+  margin-top: 15px;
+  text-align: start;
+  font-family: 'Minecraftea',sans-serif;
+}
+
+h10 {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bolder;
+  margin-top: 15px;
+  text-align: start;
+  font-family: 'Minecraftea',sans-serif;
+}
+
+h6 {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: start;
+  font-family: 'Minecraftea',sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* End Text Styles */
 
 /* Start Header Style */
 header {
@@ -122,60 +163,48 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: var(--boxColor) ;
+  font-family: 'Minecraftea',sans-serif;
   box-shadow: none;
 }
+/* End Header Style */
 
-
-/* Adding the overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Start Main Page */
+.main-page {
+  position: relative;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  z-index: -2; /* Ensures it stays behind the content */
+  height: 100vh;
+  background-size: cover;
+  background-position: start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden; 
 }
 
+@media (max-width: 768px) {
+  .main-page-text h1 {
+    font-size: 45px;
+  }
 
-
-/* Box Styles */
-.home-box1 {
-  display: flex; /* Correct 'display' for flexbox */
-  flex-direction: row; /* Arrange items horizontally */
-  align-items: center; /* Align items to the start vertically */
-  justify-content: flex-start; /* Align items to the start horizontally */
-  text-align: center; /* Align text to the left */
-  width: 99%; 
-  max-width: 999px; /* Prevent the box from becoming too wide */
-  padding: 20px;
-  background: #eff0ef;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  gap: 30px; /* Add space between the image and text */
-  z-index: 1; /* Set a positive z-index */
+  .main-page-text p {
+    font-size: 20px;
+  }
 }
 
-.dropdown-menu {
-  position: absolute; /* Ensure the dropdown appears above other elements */
-  z-index: 1050; /* Higher z-index to appear above other content */
-}
+/* End Main Page */
+
 
 
 /* Content */
 .home-content {
   flex: 1; /* Allow the content to take the remaining space */
 }
-.home-content1 {
-  flex: 1; /* Allow the content to take the remaining space */
-}
-
 
 /* Box Styles */
 .home-box {
     display: flex;
     flex-direction: row;
+    font-family: 'Minecraftea',sans-serif;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -328,7 +357,25 @@ section.why-us {
   }
 
 }
+/* Instagram Icon in the Top-Left Corner */
+.top-left-icon {
+  position: absolute;
+  top: 10px;  
+  left: 10px; 
+}
 
+.top-left-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+}
 
 
 body {
