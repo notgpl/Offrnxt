@@ -63,32 +63,20 @@ h1 {
 
   .title {
     font-size: 32px;
-    font-family: 'Minecraftia',sans-serif;
   }
 
   .title-2 {
     font-size: 20px;
-    font-family: 'Minecraftia',sans-serif;
   }
 
   .pretitle {
     font-size: 14px;
-    font-family: 'Minecraftia',sans-serif;
   }
 
   p {
-    font-size: 20;
-    font-family: 'Minecraftia',sans-serif;
+    font-size: 1.2rem;
     line-height: 28;
   }
-}
-
-p {
-  color: var(--secendaryColor);
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 400;
-  font-family: 'Minecraftea',sans-serif;
 }
 
 p1 {
@@ -221,12 +209,18 @@ header {
 
 /* Content inside the Box */
 .home-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.5;
     color: #5e5e5e;
 }
 
+.home-content h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #000000;
+}
 
 /* Image Styles */
 .home-img img {
@@ -280,7 +274,6 @@ section.why-us {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Minecraftia',sans-serif;
     width: 3rem;
     height: 3rem;
     background-color: transparent;
@@ -365,8 +358,8 @@ section.why-us {
 /* Instagram Icon in the Top-Left Corner */
 .top-left-icon {
   position: absolute;
-  top: 10px;  
-  left: 10px; 
+  top: 5px;  
+  left: 5px; 
 }
 
 .top-left-icon a {
@@ -377,7 +370,7 @@ section.why-us {
   height: 45px;
   background-color: transparent;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 50%;
   text-decoration: none;
 }
@@ -402,14 +395,12 @@ body.home-rtl {
 }
 
 .title {
-  font-family: 'Minecraftia',sans-serif;
   color: var(--primaryColor);
   font-size: 32px;
   font-weight: bold;
   position: relative;
 }
 .title-2 {
-  font-family: 'Minecraftia',sans-serif;
   color: var(--title-2-color);
   font-size: 26px;
   font-weight: bold;
@@ -422,7 +413,6 @@ body.home-rtl {
   position: start;
 }
 .pretitle {
-  font-family: 'Minecraftia',sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
@@ -507,7 +497,6 @@ a:focus {
 
 /* Button Styles */
 .btn {
-  font-family: 'Minecraftia',sans-serif;
   display: inline-block;
   padding: .5rem 2 rem;
   background-color: #0ae25d;
@@ -857,7 +846,7 @@ img {
 }
 
 .footer .logo p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -882,6 +871,7 @@ img {
 
 .footer .box p {
   color: var(--secendaryColor);
+  font-size: 1.4rem;
 }
 
 .footer .box .logo img {
@@ -959,15 +949,15 @@ h1 {
 span {
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 3.3rem;
+  margin-top: 25px;
+  font-size: 2.7rem;
   position: relative; /* Needed for particles */
   font-family: 'Minecraftea', sans-serif;
 }
 
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #ffffff;
-  margin: 1rem 0;
   font-family: 'Minecraftea', sans-serif;
 }
